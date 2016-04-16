@@ -8,31 +8,43 @@ public class Person {
 	private String Nachname;
 
 	public Person(String Personalnummer) {
-		
-		setPersonalNr(Personalnummer);
-		setNachname("Duck");
-		setVorname("Daisy");
-		setAnrede("Miss");
+
+		this(Personalnummer, "Miss", "Daisy", "Duck");
+
 	}
 
-	public Person(String Anrede, String Personalnummer) {
-		
+	public Person(String Personalnummer, String Anrede) {
+
 		this(Personalnummer);
-		
+
 		if (Anrede.equals("Mister")) {
-			
+
 			setNachname("Duck");
 			setVorname("Donald");
 			setAnrede("Mister");
-			setPersonalNr(Personalnummer);
 		}
-
 	}
 
-	public Person(String Personalnummer, String Vorname, String Anrede) {
+	public Person(String Personalnummer, String Anrede, String vorname) {
+
+		this(Personalnummer, "Miss", vorname, "Duck");
+
+		if (Anrede.equals("Mister")) {
+			setPersonalNr(Personalnummer);
+			setAnrede("Mister");
+			setVorname(vorname);
+			setNachname("NACHNAME");
+		}
+	}
+
+	public Person(String Personalnummer, String Anrede, String Vorname, String name) {
+
+		setPersonalNr(Personalnummer);
+		setAnrede(Anrede);
+		setVorname(Vorname);
+		setNachname(name);
 
 	}
-	
 
 	public String getPersonalNr() {
 		return this.PersonalNr;
