@@ -4,8 +4,19 @@ public class Program {
 
 	public static void main(String[] args) {
 		
+		//kostenintensive Aufgabe
+		String s1 = "";
+		for(int i = 0; i < 100; ++i)
+		{s1 = s1 + ".";}
 		
-		String s = ".....................................................................................................";
+		//mögliche Lösung
+		String s2 = ".....................................................................................................";
+		
+		//weitere mögliche Lösung		
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < 100; i++) {
+			sb.append(".");
+		}
 		
 	}
 	
