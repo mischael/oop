@@ -77,5 +77,30 @@ public class Person {
 	public void setNachname(String nachname) {
 		Nachname = nachname;
 	}
+	
+	public void foo(){
+		
+		//Originalaufgabe
+		String s = "";
+		
+		for (int i = 0; i < 100; i++) {
+	
+		}
+			
+		//mögliche Lösung
+		String s2 = ".....................................................................................................";
+		
+		//weitere mögliche Lösung		
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < 100; i++) {
+				sb.append(".");
+		}
+		
+		//weitere Lösung
+		for (int i = 0; i < 100; i++) {
+			s.concat(".");
+		}
+		
+	}
 
 }
