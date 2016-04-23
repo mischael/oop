@@ -18,7 +18,6 @@ public class Person {
 		this(Personalnummer);
 
 		if (Anrede.equals("Mister")) {
-
 			setNachname("Duck");
 			setVorname("Donald");
 			setAnrede("Mister");
