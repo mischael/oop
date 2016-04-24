@@ -84,7 +84,7 @@ public class Person {
 
 	public void foo() {
 
-		// Originalaufgabe
+		// Originalaufgabe es werden 101 String Instanzen erstellt
 		String s = "";
 
 		for (int i = 0; i < 100; i++) {
