@@ -1,3 +1,6 @@
+/*
+ * test
+ */
 package de.fhkiel.oop.firstexercise;
 
 public class Person {
@@ -88,16 +91,16 @@ public class Person {
 
 		}
 
-		// mögliche Lösung
+		// mï¿½gliche Lï¿½sung
 		String s2 = ".....................................................................................................";
 
-		// weitere mögliche Lösung
+		// weitere mï¿½gliche Lï¿½sung
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < 100; i++) {
 			sb.append(".");
 		}
 
-		// weitere Lösung
+		// weitere Lï¿½sung
 		for (int i = 0; i < 100; i++) {
 			s.concat(".");
 		}
