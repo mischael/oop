@@ -4,7 +4,7 @@ package de.fhkiel.oop.secondexercise;
  * Stand:24.04.2016
  */
 
-public class Person {
+public class Person extends Adresse {
 
 	private String PersonalNr;
 	private String Anrede;
@@ -78,16 +78,16 @@ public class Person {
 	}
 	
 	public void setGeburtstag(MyDate gTag){
-		this.gTag(gTag);
+		this.gTag = gTag;
 		
 	}
 	
-	public MyDate get Geburtstag(){
+	public MyDate getGeburtstag(){
 		return this.gTag;
 	}
 	
 	public void setTodestag(MyDate tTag){
-		this.gTag(gTag);
+		this.tTag = tTag;
 	}
 	
 	public MyDate getTodestag(){

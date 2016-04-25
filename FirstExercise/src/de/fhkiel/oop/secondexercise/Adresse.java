@@ -26,16 +26,11 @@ public class Adresse {
 	
 	public void addAnwohner(Person anwohner){
 		int i = 0;
-		while(anwohner[i]!= null){
 		
-			i++;
-		}
 		
 	}
 	
-	public Person getAnwohner(){
-		
-	}
+	
 	
 	public String getStraﬂe() {
 		return straﬂe;
