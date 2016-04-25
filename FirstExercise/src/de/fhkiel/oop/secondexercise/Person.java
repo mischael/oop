@@ -14,7 +14,8 @@ public class Person extends Adresse {
 	private MyDate tTag;
 	private Person parent;
 	private Person child;
-
+	
+	
 	public Person(String Personalnummer) {
 
 		this(Personalnummer, "Miss", "Daisy", "Duck");
@@ -55,6 +56,17 @@ public class Person extends Adresse {
 
 	}
 
+	@Override
+	public void anmelden(Person anwohner){
+		super.anmelden(this);
+	}
+	
+	@Override
+	public boolean abmelden(Person anwohner){
+		return super.abmelden(this);
+	}
+	
+	
 	public void setParent(Person parent){
 		
 		this.parent = parent;
