@@ -6,13 +6,35 @@ public class Adresse {
 	private String hausnummer;
 	private int plz;
 	private String ort;
+	private Person[] anwohner;
+	private final int LIMITANWOHNER = 50;
+	
+	public Adresse(){
+		anwohner = new Person[this.LIMITANWOHNER];
+		
+	}
 	
 	public Adresse(String straﬂe, String hausnummer, int plz, String ort){
+		
+		this();
 		
 		setStraﬂe(straﬂe);
 		setHausnummer(hausnummer);
 		setPlz(plz);
 		setOrt(ort);
+	}
+	
+	public void addAnwohner(Person anwohner){
+		int i = 0;
+		while(anwohner[i]!= null){
+		
+			i++;
+		}
+		
+	}
+	
+	public Person getAnwohner(){
+		
 	}
 	
 	public String getStraﬂe() {
