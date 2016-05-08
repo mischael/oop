@@ -1,5 +1,9 @@
 package de.fhkiel.oop.secondexercise;
 
+/*Beschreibung: Aufgabe 2
+ * Michael Bagsik 926229 ; Jannik Winzenburg 926133 
+ * Stand:05.08.2016
+ */
 public class MyDate {
 	
 	private int tag;

@@ -1,9 +1,13 @@
 package de.fhkiel.oop.secondexercise;
+/*Beschreibung: Aufgabe 2
+ * Michael Bagsik 926229 ; Jannik Winzenburg 926133 
+ * Stand:05.08.2016
+ */
 
-public class Adresse {
+public class Adresse extends MyDate {
 
 	private String straﬂe;
-	private String hausnummer;
+	private int hausnummer;
 	private int plz;
 	private String ort;
 	private Person[] anwohner;
@@ -14,7 +18,7 @@ public class Adresse {
 
 	}
 
-	public Adresse(String straﬂe, String hausnummer, int plz, String ort) {
+	public Adresse(String straﬂe, int hausnummer, int plz, String ort) {
 
 		this();
 
@@ -48,11 +52,11 @@ public class Adresse {
 		this.straﬂe = straﬂe;
 	}
 
-	public String getHausnummer() {
+	public int getHausnummer() {
 		return hausnummer;
 	}
 
-	public void setHausnummer(String hausnummer) {
+	public void setHausnummer(int hausnummer) {
 		this.hausnummer = hausnummer;
 	}
 

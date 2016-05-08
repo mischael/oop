@@ -1,12 +1,12 @@
 package de.fhkiel.oop.secondexercise;
-/*Beschreibung: Aufgabe 1 a) Aufwärts 
+/*Beschreibung: Aufgabe 2
  * Michael Bagsik 926229 ; Jannik Winzenburg 926133 
- * Stand:24.04.2016
+ * Stand:05.08.2016
  */
 
 public class Person extends Adresse {
 
-	private String PersonalNr;
+	private int PersonalNr;
 	private String Anrede;
 	private String Vorname;
 	private String Nachname;
@@ -16,13 +16,13 @@ public class Person extends Adresse {
 	private Person child;
 	
 	
-	public Person(String Personalnummer) {
+	public Person(int Personalnummer) {
 
 		this(Personalnummer, "Miss", "Daisy", "Duck");
 
 	}
 
-	public Person(String Personalnummer, String Anrede) {
+	public Person(int Personalnummer, String Anrede) {
 
 		this(Personalnummer, Anrede, "", "Duck");
 
@@ -37,7 +37,7 @@ public class Person extends Adresse {
 
 	}
 
-	public Person(String Personalnummer, String Anrede, String vorname) {
+	public Person(int Personalnummer, String Anrede, String vorname) {
 
 		this(Personalnummer, Anrede, vorname, "Duck");
 
@@ -47,7 +47,7 @@ public class Person extends Adresse {
 		}
 	}
 
-	public Person(String Personalnummer, String Anrede, String Vorname, String name) {
+	public Person(int Personalnummer, String Anrede, String Vorname, String name) {
 
 		setPersonalNr(Personalnummer);
 		setAnrede(Anrede);
@@ -106,11 +106,11 @@ public class Person extends Adresse {
 		return this.tTag;
 	}
 	
-	public String getPersonalNr() {
+	public int getPersonalNr() {
 		return this.PersonalNr;
 	}
 
-	public void setPersonalNr(String personalNr) {
+	public void setPersonalNr(int personalNr) {
 		PersonalNr = personalNr;
 	}
 
@@ -136,31 +136,6 @@ public class Person extends Adresse {
 
 	public void setNachname(String nachname) {
 		Nachname = nachname;
-	}
-
-	public void foo() {
-
-		// Originalaufgabe es werden 101 String Instanzen erstellt
-		String s = "";
-
-		for (int i = 0; i < 100; i++) {
-
-		}
-
-		// mögliche Lösung
-		String s2 = ".....................................................................................................";
-
-		// weitere mögliche Lösung
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < 100; i++) {
-			sb.append(".");
-		}
-
-		// weitere Lösung
-		for (int i = 0; i < 100; i++) {
-			s.concat(".");
-		}
-
 	}
 
 }
